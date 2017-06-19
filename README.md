@@ -1,0 +1,2 @@
+# InsaneMC
+(c) InsaneMC
