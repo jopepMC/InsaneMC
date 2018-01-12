@@ -21,13 +21,13 @@ public class {extension_name} extends Extension {
     }
 
     @Override
-    public void registerListeners() {
-
+    public Listener[] listeners() {
+        return new Command[]{new {listener_class}, ...};
     }
 
     @Override
-    public void registerCommands() {
-
+    public Command[] commands() {
+        return new Command[]{new {command_class}, ...};
     }
 }
 
