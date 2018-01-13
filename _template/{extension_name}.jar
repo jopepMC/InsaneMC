@@ -1,0 +1,34 @@
+package org.insanemc.extension.{extension_name};
+
+import org.bukkit.Bukkit;
+import org.bukkit.event.Listener;
+import org.insanemc.core.Core;
+import org.insanemc.core.extension.Extension;
+
+/**
+ * Copyright (c) InsaneMC 13-1-2018.
+ * Created by jopep on 22:52.
+ */
+public class {extension_name} extends Extension {
+
+    @Override
+    public void onEnable() {
+
+    }
+
+    @Override
+    public void onDisable() {
+
+    }
+
+    @Override
+    public void registerListeners() {
+        Listener[] listeners = {new {listener_name}()};
+        for(Listener listener : listeners) Bukkit.getServer().getPluginManager().registerEvents(listener, Core.getInstance());
+    }
+
+    @Override
+    public void registerCommands() {
+        new {command_name}();
+    }
+}
