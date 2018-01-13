@@ -1,0 +1,27 @@
+package org.insanemc.extension.{extension};
+
+import org.bukkit.ChatColor;
+import org.bukkit.entity.Player;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
+import org.bukkit.event.player.PlayerJoinEvent;
+import org.bukkit.event.player.PlayerQuitEvent;
+
+/**
+ * Copyright (c) InsaneMC 13-1-2018.
+ * Created by jopep on 22:57.
+ */
+public class {listener} implements Listener{
+
+    @EventHandler
+    public void on(PlayerJoinEvent event) {
+        Player player = event.getPlayer();
+        player.sendMessage(ChatColor.GRAY + "HELLO HOW ARE YOU?");
+    }
+
+    @EventHandler
+    public void on(PlayerQuitEvent event) {
+        Player player = event.getPlayer();
+        player.sendMessage(ChatColor.GRAY + "GOOD BYE.");
+    }
+}
