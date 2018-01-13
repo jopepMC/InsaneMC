@@ -1,4 +1,4 @@
-package org.insanemc.extension.{extension_name};
+package org.insanemc.extension.{extension};
 
 import org.bukkit.Bukkit;
 import org.bukkit.event.Listener;
@@ -9,7 +9,7 @@ import org.insanemc.core.extension.Extension;
  * Copyright (c) InsaneMC 13-1-2018.
  * Created by jopep on 22:52.
  */
-public class {extension_name} extends Extension {
+public class {extension} extends Extension {
 
     @Override
     public void onEnable() {
@@ -23,12 +23,12 @@ public class {extension_name} extends Extension {
 
     @Override
     public void registerListeners() {
-        Listener[] listeners = {new {listener_name}()};
+        Listener[] listeners = {new {listener}()};
         for(Listener listener : listeners) Bukkit.getServer().getPluginManager().registerEvents(listener, Core.getInstance());
     }
 
     @Override
     public void registerCommands() {
-        new {command_name}();
+        new {command}();
     }
 }
