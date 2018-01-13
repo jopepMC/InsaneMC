@@ -1,0 +1,21 @@
+package org.insanemc.extension.{extension};
+
+import org.bukkit.ChatColor;
+import org.bukkit.command.CommandSender;
+import org.insanemc.core.utils.Command;
+
+/**
+ * Copyright (c) InsaneMC 13-1-2018.
+ * Created by jopep on 22:56.
+ */
+public class {command} extends Command{
+
+    public {command}() {
+        super({command}, new String[]{{aliases}}, "permission}", {rank});
+    }
+
+    @Override
+    public void execute(CommandSender sender, String[] args) {
+        sender.sendMessage(ChatColor.GRAY + "This is a {command} command.");
+    }
+}
